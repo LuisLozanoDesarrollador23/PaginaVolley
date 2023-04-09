@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*------- HEADER --------------*/
+
+header{
+    background: url(../Img/Portada.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+header .menu a {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 100;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header .menu a:hover {
+text-decoration: underline;
+}
+
+header .textos {
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+}
+
+header .textos .nombre {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+header .textos .nombre span {    
+    font-weight: 200;
+}
+
+header .textos h3 {    
+    font-weight: 200;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/***** MAIN *******/
+.main {
+    background: url(../Img/triangles_pattern.webp);
+    background-repeat: repeat;
+}
+
+.main .Acerca .contenedor {
+overflow: visible;
+position: relative;
+}
+
+.main .Acerca .imagen1 {
+    width: 80%;    
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgb(0,0,0.35);
+}
+
+.main .Acerca .imagen1 img {
+vertical-align: top;
+width: 100%;
+}
+
+.main .Acerca article {
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    float: right;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgb(0,0,0.35);
+}
+
+.main .Acerca article h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.main .Acerca article p {
+    font-size: 18px;
+    font-weight: 300;    
+}
+
+.main .categoria {
+    padding-top: 600px;
+    margin-bottom: 50px;
+}
+
+.main .categoria .tituloCategoria {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+}
+
+.main .categoria .contenedor-categoria,
+.main .categoria .contenedor-categoria2 {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;        
+}
+
+.main .categoria article {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.main .categoria .nivel {
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.main .categoria .nivel1 {    
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 4px dotted;    
+    overflow: hidden;
+}
+
+.main .categoria .nombre {
+font-size: 20px;
+margin-bottom: 15px;
+float: left;
+}
+
+.main .categoria .precio {
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.main .categoria .descripcion {
+    font-size: 16px;
+    color: #8d8b8b;
+    clear: both;
+
+}
+
+/***GALERIA**/
+.main .galeria {
+    overflow: hidden;
+}
+
+.main .galeria .tituloGaleria {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.main .galeria .foto {
+    width: 25%;
+    float: left;
+}
+
+.main .galeria .foto img {
+width: 100%;
+height: 300px;
+padding: 5px;
+vertical-align: top;
+opacity: .7;
+}
+
+.main .galeria .foto img:hover {
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.main .contacto {
+    background: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+
+.main .contacto .tituloUbicacion {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+.main .contacto .dirrecion {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.main .contacto .horarios {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.main .contacto .horarios h3 {
+    font-size: 20px;
+    font-weight: 700;    
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .mapa iframe {
+    width: 100%;
+    max-height: 800px;
+}
+
+/*** FOOTER ****/
+
+footer {
+    background: #000;
+}
+
+footer .copy {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+/*** MEDIA QUERIES ****/ 
+@media screen and (max-width:800px) {
+    header .contenedor {
+        position: static;
+        height: auto;
+    }
+    header .textos {
+        position: static;
+        margin: 100px 0;
+    }
+
+    header .menu {
+        text-align: center;
+    }
+
+    header .menu  a {
+        margin: 10px 20px;
+    }
+
+    header .textos .nombre {
+        font-size: 30px;
+    }
+    header .textos h3 {
+        font-size: 15px;
+    }
+
+    .main .Acerca .imagen1 {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .Acerca article {
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform:translate(0px,0);        
+    }
+
+    .main .categoria {
+        margin-top: -300px;
+    }
+
+    .main .categoria article {
+        width: 100%;
+    }
+
+    .main .galeria .foto {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .main .mapa {
+        width: 80%;
+        margin: auto;
+    }
+
+    @media screen and (max-width:460px) {
+        header .menu  a {
+            margin: 5px 10px;
+            font-size: 10px;
+        }
+    
+        header .textos .nombre {
+            font-size: 20px;
+        }
+        header .textos h3 {
+            font-size: 10px;
+        }
+        .main .galeria .foto {            
+            width: 100%;                   
+        }
+
+        .main .contacto .dirrecion{
+            margin-bottom: 10px;
+        }
+    
+        .main .contacto .dirrecion,
+        .main .contacto .horarios{
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+        
+}
+
+
+
+
+
